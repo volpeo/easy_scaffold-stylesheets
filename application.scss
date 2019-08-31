@@ -1,0 +1,11 @@
+// Config
+@import "config/fonts";
+@import "config/colors";
+@import "config/breakpoints";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import '~bootstrap/scss/bootstrap.scss';
+
+// Components
+@import "components/index";
