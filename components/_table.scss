@@ -5,20 +5,23 @@
   }
   tbody {
     tr {
-      position: relative;
       border-bottom: 1px solid #F0F0F0;
-      transform: scale(1); // hack from https://stackoverflow.com/questions/8501727/table-row-wont-contain-elements-with-positionabsolute
       &:last-child {
         border-bottom: none;
       }
-      .tr-link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-      }
     }
+  }
+
+  td {
+    position: relative;
+  }
+
+  .td-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
   }
 }
