@@ -1,0 +1,16 @@
+@each $color, $value in $theme-colors {
+  .svg-#{$color} {
+    fill: $value;
+  }
+}
+
+.svg-light-50 {
+  fill: rgba($light, 0.5);
+}
+.svg-dark-50 {
+  fill: rgba($dark, 0.5);
+}
+
+.svg-align-text {
+  margin-top: -3px;
+}
